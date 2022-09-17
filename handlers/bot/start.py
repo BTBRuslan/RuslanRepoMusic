@@ -12,18 +12,18 @@ from config import (BOT_NAME, SUPPORT_GROUP, OWNER_USERNAME, BOT_USERNAME)
 @bot.on_message(filters.command("start"))
 def start_(bot, message):
     
-    START_TEXT = """**⭐ Merhaba {}\n\n▫️Ben {} \n\n▫️Basit Bir Müzik Botuyum .\n\n▫️Beni Grubunuza ekleyip yönetici yapın ve müziğin keyfini çıkarın !**"""
+    START_TEXT = """** Salam👋 {}\n\n Mən {} \n\n Sadə Bir Müziqi Botuyum .\n\n Məni qrupunuza əlavə edib admin edin və musiqinin kefin çıxarın!**"""
 
     START_BUTTON = [
                 [
-                    InlineKeyboardButton(text="🎉 Beni Gruba Ekleyin 🎉", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton(text="➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
-                    InlineKeyboardButton(text="📝 Sahibim ", url=f"https://t.me/MacroPem"),
-                    InlineKeyboardButton(text="🇹🇷 Sohbet ", url="https://t.me/MajesteSohbetTr"),
+                    InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url=f"https://t.me/BrendUlvi"),
+                    InlineKeyboardButton(text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📚 ", url="https://t.me/UlviSup"),
                 ],                
                 [                    
-                    InlineKeyboardButton(text="📚 Tüm Komutlar ", url="https://t.me/Sakin_Tiklama/5"),
+                    InlineKeyboardButton(text="Ə𝐦𝐫𝐥ə𝐫 ⚙ ", url="https://t.me/UlviProject"),
                 ],
                 
             ]
@@ -33,9 +33,9 @@ def start_(bot, message):
     )
     message.delete()
 
-@bot.on_message(filters.command("hsusueue"))
+@bot.on_message(filters.command("help"))
 def help_(bot, message):
-    HELP_TXT = """Merhaba {}\nişte yardım menüsü \nGrubuna ekleyerek müzik keyfine başlayabilirsiniz @{} sorununuz nedir? 💫"""
+    HELP_TXT = """Salam👋 {}\nişte yardım menüsü \nGrubuna ekleyerek müzik keyfine başlayabilirsiniz @{} sorununuz nedir? 💫"""
     
     HELP_BUTTON = [
         [
