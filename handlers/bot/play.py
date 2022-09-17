@@ -253,7 +253,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "Hansı mahnı dinləmək istəyirsinizsə /play mahnı adı yazın"
             )
-        await lel.edit("▫️**Səsli söhbətə daxil oluram...✅** ")
+        await lel.edit(" **Səsli söhbətə daxil oluram...✅** ")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
