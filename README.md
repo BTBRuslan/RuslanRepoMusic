@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Merhaba+beni+Takip+eder-misin!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Salam+Mən+Ülvi!)
 </p></p>
 
 
