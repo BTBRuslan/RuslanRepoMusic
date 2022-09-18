@@ -35,7 +35,7 @@ def start_(bot, message):
 
 @bot.on_message(filters.command("help"))
 def help_(bot, message):
-    HELP_TXT = """Salam👋 {}\nişte yardım menüsü \nGrubuna ekleyerek müzik keyfine başlayabilirsiniz @{} sorununuz nedir? 💫"""
+    HELP_TXT = """Salam👋 {}\nKömək  \nGrubuna ekleyerek müzik keyfine başlayabilirsiniz @{} Sualınız nədir? """
     
     HELP_BUTTON = [
         [
