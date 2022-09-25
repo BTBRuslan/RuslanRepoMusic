@@ -173,10 +173,10 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/UlviSup"),
+                            url=f"https://t.me/lorrd_sohbet"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
-                            url=f"https://t.me/UlviProject"),                   
+                            url=f"https://t.me/maqa_blog"),                   
                ],
             ]
         )
@@ -214,10 +214,10 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/UlviSup"),
+                            url=f"https://t.me/lorrd_sohbet"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
-                            url=f"https://t.me/UlviProject"),                   
+                            url=f"https://t.me/maqa_blog"),                   
                ],
             ]
         )
@@ -232,10 +232,10 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/UlviSup"),
+                            url=f"https://t.me/lorrd_sohbet"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
-                            url=f"https://t.me/UlviProject"),                   
+                            url=f"https://t.me/maqa_blog"),                   
                ],
             ]
         )
@@ -288,10 +288,10 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                             text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/UlviSup"),
+                            url=f"https://t.me/lorrd_sohbet"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
-                            url=f"https://t.me/UlviProject"),                   
+                            url=f"https://t.me/maqa_blog"),                   
                ],
             ]
         )
