@@ -23,7 +23,7 @@ def start_(bot, message):
                     InlineKeyboardButton(text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📚 ", url="https://t.me/lorrd_sohbet"),
                 ],                
                 [                    
-                    InlineKeyboardButton(text="Ə𝐦𝐫𝐥ə��� ⚙ ", url="https://t.me/maqa_blog"),
+                    InlineKeyboardButton(text=" 𝐊𝐚𝐧𝐚𝐥", url="https://t.me/maqa_blog")
                 ],
                 
             ]
