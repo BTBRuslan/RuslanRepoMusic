@@ -19,11 +19,11 @@ def start_(bot, message):
                     InlineKeyboardButton(text="➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
-                    InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url=f"https://t.me/BrendUlvi"),
-                    InlineKeyboardButton(text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📚 ", url="https://t.me/UlviSup"),
+                    InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url=f"https://t.me/Karabakh_041"),
+                    InlineKeyboardButton(text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📚 ", url="https://t.me/lorrd_sohbet"),
                 ],                
                 [                    
-                    InlineKeyboardButton(text="Ə𝐦𝐫𝐥ə𝐫 ⚙ ", url="https://t.me/UlviProject"),
+                    InlineKeyboardButton(text="Ə𝐦𝐫𝐥ə��� ⚙ ", url="https://t.me/maqa_blog"),
                 ],
                 
             ]
@@ -78,12 +78,12 @@ def callback_query(Client, callback: CallbackQuery):
         START_TEXT = f"""Merhaba, ben {BOT_NAME} \nBasit ve gecikmesiz bir bottur\nHerhangi bir sorun olduğunda katılın 👉 @{SUPPORT_GROUP}\nya da help butonuna basınız  /help """
         START_BUTTON = [
                 [
-                    InlineKeyboardButton(text="Sohbet 💫", url=f"https://t.me/MajesteSohbetTr"),
+                    InlineKeyboardButton(text="Sohbet 💫", url=f"https://t.me/lorrd_sohbet"),
                     InlineKeyboardButton(text="Beni gruba ekle ➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
                     InlineKeyboardButton(text="Sahibim ⭐", url=f"https://t.me/{OWNER_USERNAME}"),
-                    InlineKeyboardButton(text="Sahibim ✨", url="https://t.me/Yorgun_Birisi"),
+                    InlineKeyboardButton(text="Sahibim ✨", url="https://t.me/Karabakh_041"),
                 ],                
                 [                    
                     InlineKeyboardButton(text="Komutlar 🕹️", callback_data="help_"),
