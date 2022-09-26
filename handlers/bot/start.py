@@ -20,7 +20,7 @@ def start_(bot, message):
                 ],
                 [
                     InlineKeyboardButton(text="𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url=f"https://t.me/Karabakh_041"),
-                    InlineKeyboardButton(text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📚 ", url="https://t.me/lorrd_sohbet"),
+                    InlineKeyboardButton(text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬", url="https://t.me/lordu_sohbett"),
                 ],                
                 [                    
                     InlineKeyboardButton(text=" 𝐊𝐚𝐧𝐚𝐥", url="https://t.me/maqa_blog")
@@ -79,7 +79,7 @@ def callback_query(Client, callback: CallbackQuery):
         START_BUTTON = [
                 [
                     InlineKeyboardButton(text="Sohbet 💫", url=f"https://t.me/lorrd_sohbet"),
-                    InlineKeyboardButton(text="Beni gruba ekle ➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton(text="Məni qrupa əlavə et ➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
                     InlineKeyboardButton(text="Sahibim ⭐", url=f"https://t.me/{OWNER_USERNAME}"),
