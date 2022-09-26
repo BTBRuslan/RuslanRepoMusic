@@ -172,8 +172,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/lorrd_sohbet"),
+                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬",
+                            url=f"https://t.me/lordu_sohbett"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
@@ -213,8 +213,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/lorrd_sohbet"),
+                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮📝",
+                            url=f"https://t.me/lordu_sohbett"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
@@ -231,8 +231,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/lorrd_sohbet"),
+                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬",
+                            url=f"https://t.me/lordu_sohbett"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
@@ -287,8 +287,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝐮𝐩𝐩𝐨𝐫𝐭📝",
-                            url=f"https://t.me/lorrd_sohbet"),
+                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬",
+                            url=f"https://t.me/lordu_sohbett"),
                     InlineKeyboardButton(
                             text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
