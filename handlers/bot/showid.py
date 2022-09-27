@@ -23,7 +23,7 @@ async def showid(client, message):
         )
         if message.reply_to_message:
             _id += (
-                "<b>Kullanıcı İd</b>: "
+                "<b>İstifadəçi ID</b>: "
                 f"<code>{message.reply_to_message.from_user.id}</code>\n"
             )
             file_info = get_file_id(message.reply_to_message)
@@ -34,7 +34,7 @@ async def showid(client, message):
                 )
         else:
             _id += (
-                "<b>Kullanıcı İd</b>: "
+                "<b>İstifadəçi ID</b>: "
                 f"<code>{message.from_user.id}</code>\n"
             )
             file_info = get_file_id(message)
