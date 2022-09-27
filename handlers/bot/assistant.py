@@ -13,7 +13,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Beni Önce Yönetici Yapmalısın</b>",
+            "<b>Məni əvvəlcə admin etməlisiniz</b>",
         )
         return
 
@@ -24,21 +24,20 @@ async def addchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id,"•> **Senin İsteğin Üzerine Geldim** !")
+        await USER.send_message(message.chat.id,"•> **İstəyinizlə gəldim**!")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>Asistan Zaten Grupta Var</b>",
+            "<b>Asistan onsuzda qrupdadır</b>",
         )
         pass
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"<b>Asistan {user.first_name} için yoğun katılma istekleri nedeniyle grubunuza katılamadı! Asistanın grupta yasaklanmadığından emin olun."
-            "Veya Asistan Hesabını Gruba Kendin Ekle </b>",
+            f"<b>Asistan {user.first_name} Qoşulmaq üçün çoxlu sorğulara görə qrupunuza qoşulmaq mümkün olmadı! Köməkçinin qrupda qadağan edilmədiyinə əmin olun."             "Və ya Özünüzü Qruplaşdırmaq üçün Köməkçi Hesabı əlavə edin </b>",
         )
         return
     await message.reply_text(
-            "<b>Asistan Zaten Grupta Var</b>",
+            "<b>Asistan onsuzda qrupdadır</b>",
         )
     
 @USER.on_message(filters.group & filters.command(["ayril"]))
@@ -47,7 +46,7 @@ async def rem(USER, message):
         await USER.leave_chat(message.chat.id)
     except:  
         await message.reply_text(
-            f"<b>Kullanıcı grubunuzdan ayrılamadı!."
-            "\n\nYada Kendin Çıkarabilirsin</b>",
+            f"<b>İstifadəçi qrupunuzu tərk edə bilmədi!."
+            "\n\nYada özünüz çıxara bilərsiniz</b>",
         )
         return
