@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply("▫️**Lütfen bekleyin **!")
+    m = message.reply("▫️**Zəhmət olmasa gözləyin**!")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -45,17 +45,17 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "▫️**Sorgunuz bulunamadı** !"
+            "▫️**Sorğunuz tapılmadı** !"
         )
         print(str(e))
         return
-    m.edit("▫️**Sorgunuz yüklendi **!")
+    m.edit("▫️**Sorğunuz yükləndi**!")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f" [ Majeste Muzik ](https://t.me/Sakin_Tiklama) : **Tarafından**"
+        rep = f" [ Majeste Muzik ](https://t.me/Sakin_Tiklama) : **Tərəfindən**"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -63,7 +63,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit("**▫️İndirme hatası tekrar deneyin **!")
+        m.edit("**▫️Yükləmə xətası yenidən cəhd edin**!")
         print(e)
 
     try:
