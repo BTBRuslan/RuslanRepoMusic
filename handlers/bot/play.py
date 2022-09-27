@@ -176,7 +176,7 @@ async def play(_, message: Message):
                             url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
                             text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blog"),                   
+                            url=f"https://t.me/maqa_blogg"),                   
                ],
             ]
         )
@@ -217,7 +217,7 @@ async def play(_, message: Message):
                             url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
                             text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blog"),                   
+                            url=f"https://t.me/maqa_blogg"),                   
                ],
             ]
         )
@@ -235,7 +235,7 @@ async def play(_, message: Message):
                             url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
                             text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blog"),                   
+                            url=f"https://t.me/maqa_blogg"),                   
                ],
             ]
         )
@@ -291,7 +291,7 @@ async def play(_, message: Message):
                             url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
                             text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blog"),                   
+                            url=f"https://t.me/maqa_blogg"),                   
                ],
             ]
         )
