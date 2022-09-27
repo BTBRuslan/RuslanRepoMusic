@@ -127,7 +127,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b><i>Mahnıları ifa etmək üçün admin olmalıyam zəhmət olmasa məni admin edin!</i></b>")
+                        "<b><i>Mahnı oxutmağm üçün admin olmalıyam zəhmət olmasa məni admin edin!</i></b>")
                     return
 
                 try:
@@ -158,12 +158,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 360) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**Tələb olunan mahnı vaxt limitini keçib{DURATION_LIMIT} Uzun müddətli istifadəyə icazə verilmir❕*"
+                f"**Tələb olunan mahnı vaxt limitini keçib {DURATION_LIMIT} uzun müddətli istifadəyə icazə verilmir❕*"
             )
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/cb64af7c9d021781bcf28.jpg"
+        thumb_name = "https://te.legra.ph/file/7e7bbefe30efa696f0fbc.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -172,10 +172,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬",
-                            url=f"https://t.me/lordu_sohbett"),
+                            text="Söhbət Qrupu 💬",
+                            url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
-                            text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
+                            text="Kanal 🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
                ],
             ]
@@ -213,10 +213,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮📝",
-                            url=f"https://t.me/lordu_sohbett"),
+                            text="Söhbət Qrupu 💬",
+                            url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
-                            text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
+                            text="Kanal 🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
                ],
             ]
@@ -224,17 +224,17 @@ async def play(_, message: Message):
     
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/cb64af7c9d021781bcf28.jpg"
+            thumb_name = "https://te.legra.ph/file/7e7bbefe30efa696f0fbc.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬",
-                            url=f"https://t.me/lordu_sohbett"),
+                            text="Söhbət Qrupu 💬",
+                            url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
-                            text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
+                            text="Kanal 🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
                ],
             ]
@@ -242,7 +242,7 @@ async def play(_, message: Message):
     
         if (dur / 360) > DURATION_LIMIT:
             await lel.edit(
-                f"**Tələb olunan mahnı vaxt limitini keçib{DURATION_LIMIT} Uzun müddətli istifadəyə icazə verilmir❌**"
+                f"**Tələb olunan mahnı vaxt limitini keçib {DURATION_LIMIT} uzun müddətli istifadəyə icazə verilmir❌**"
             )
             return
         requested_by = message.from_user.first_name
@@ -287,10 +287,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐒𝗼̈𝐡𝐛𝐞𝐭 𝐐𝐫𝐮𝐩𝐮 💬",
-                            url=f"https://t.me/lordu_sohbett"),
+                            text="Söhbət Qrupu 💬",
+                            url=f"https://t.me/FlamingoChat"),
                     InlineKeyboardButton(
-                            text="𝐏𝐫𝐨𝐣𝐞𝐜𝐭🇦🇿",
+                            text="Kanal 🇦🇿",
                             url=f"https://t.me/maqa_blog"),                   
                ],
             ]
@@ -298,7 +298,7 @@ async def play(_, message: Message):
     
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"** Tələb olunan mahnı vaxt limitini keçib{DURATION_LIMIT} Uzun müddətli istifadəyə icazə verilmir❕**"
+                f"** Tələb olunan mahnı vaxt limitini keçib {DURATION_LIMIT} uzun müddətli istifadəyə icazə verilmir❕**"
             )
             return
         requested_by = message.from_user.first_name
@@ -312,7 +312,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)      
         await message.reply_photo(
             photo="final.png",
-            caption="▶️ **𝐌𝐚𝐡𝐧ı 𝐧ö𝐯𝐛ə𝐲ə ə𝐥𝐚𝐯ə 𝐞𝐝𝐢𝐥𝐝𝐢 .**\n\nİ𝐬𝐭ə𝐲ə𝐧: {} \n\n𝐌𝐚𝐡𝐧ı 𝐬𝐢𝐲𝐚𝐡ı𝐬ı : {}".format(usrid, position),
+            caption="▶️ **Mahnı Növbəyə əlavə edildi.**\n\nİstəyən: {} \n\nMahnı Siyahısı: {}".format(usrid, position),
             reply_markup=keyboard,
         )
         await message.delete()
@@ -331,7 +331,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **𝐘𝐚𝐲ı𝐦 𝐛𝐚ş𝐥𝐚𝐝ı...**\n\n𝐐𝐫𝐮𝐩 : {}\n\nİ𝐬𝐭ə𝐲ə𝐧 : {}".format(
+            caption="▶️ **Musiqi səsli chatda oxunur...**\n\nQrup: {}\n\nİstəyən: {}".format(
         message.chat.title, usrid
         ), )
         
