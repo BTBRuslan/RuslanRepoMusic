@@ -19,11 +19,11 @@ def start_(bot, message):
                     InlineKeyboardButton(text="➕Məni qrupuna əlavə et➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
-                    InlineKeyboardButton(text="OWNER 🇦🇿 ", url=f"https://t.me/Karabakh_oo1"),
-                    InlineKeyboardButton(text="Söhbət Qrupu 💬", url="https://t.me/FlamingoChat"),
+                    InlineKeyboardButton(text="Sahibim 🙇🏻", url=f"https://t.me/Rahid_2003"),
+                    InlineKeyboardButton(text="Digər Botlar", url="https://t.me/Rahid_44"),
                 ],                
                 [                    
-                    InlineKeyboardButton(text="Kanal", url="https://t.me/maqa_blogg")
+                    InlineKeyboardButton(text="Kanalım 😍❤️", url="https://t.me/qruzdaa")
                 ],
                 
             ]
@@ -78,12 +78,12 @@ def callback_query(Client, callback: CallbackQuery):
         START_TEXT = f"""Salam, Mən {BOT_NAME} \nBu sadə və gecikməsiz bir botdur\nProblem olanda qoşulun 👉 @{SUPPORT_GROUP}\nvə ya /help basın"""
         START_BUTTON = [
                 [
-                    InlineKeyboardButton(text="Söhbət Qrupu 💬", url=f"https://t.me/FlamingoChat"),
+                    InlineKeyboardButton(text="🆘 Support", url=f"https://t.me/Rahid_Support"),
                     InlineKeyboardButton(text="Məni qrupa əlavə et ➕", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
-                    InlineKeyboardButton(text="Sahibim ⭐", url=f"https://t.me/{OWNER_USERNAME}"),
-                    InlineKeyboardButton(text="Sahibim ✨", url="https://t.me/Karabakh_oo1"),
+                    InlineKeyboardButton(text="Sahibim 🙇🏻", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="Sahibim 🙇🏻", url="https://t.me/Rahid_2003"),
                 ],                
                 [                    
                     InlineKeyboardButton(text="Əmrlər 🕹️", callback_data="help_"),
@@ -99,9 +99,9 @@ def callback_query(Client, callback: CallbackQuery):
         B_HELP = """
 `Əsas əmrlər:- `
 
-/oynat (Sorğu, YouTube linki, audio fayl) - bu əmrdən istifadə edin və musiqidən həzz alın
+/play (Sorğu, YouTube linki, audio fayl) - bu əmrdən istifadə edin və musiqidən həzz alın
 /ytp (Sorgu) - Daha təkmil musiqi axtarmaq üçün istifadə edin
-/bul (Sorgu) - Bu əmrlə sevimli mahnılarınızı yükləyə bilərsiniz
+/song (Sorgu) - Bu əmrlə sevimli mahnılarınızı yükləyə bilərsiniz
 /ara (Sorgu) - YouTube-da axtarmaq
 """
         BUTTON = [
@@ -120,8 +120,8 @@ def callback_query(Client, callback: CallbackQuery):
 
 /durdur - Musiqinin ifasını dayandırır
 /devam - Dayandırılmış musiqini davam etdirir
-/atla - Növbəti mahnıya keçir
-/son - Mahnını bitir
+/skip - Növbəti mahnıya keçir
+/end - Mahnını bitir
 /katil - Qrupa köməkçi əlavə edin
 
 
