@@ -26,8 +26,8 @@ END = "https://telegra.ph/file/30525f90e119bf95d9d80.jpg"
 
 BUTTON = [
     [
-        InlineKeyboardButton(text="📝 Destek", url=f"https://t.me/Sakin_Tiklama"),
-        InlineKeyboardButton(text="📍Sohbet", url=f"https://t.me/lorrd_sohbet"), 
+        InlineKeyboardButton(text="🆘 Support", url=f"https://t.me/Rahid_Support"),
+        InlineKeyboardButton(text="🤖 Digər Botlar", url=f"https://t.me/Rahid44"), 
     ],
 ]
 
@@ -41,7 +41,7 @@ async def pause(_, message: Message):
     
     await message.reply_photo(
         photo=PAUSED,
-        caption=f"Müzik durduruldu !\n\n✦ /devam :- müziği devam ettir",
+        caption=f"Musiqi dayandı !\n\n✦ /devam :- Musiqini davam etdirin",
         reply_markup=InlineKeyboardMarkup(BUTTON)
     )
     await message.delete()
@@ -55,7 +55,7 @@ async def resume(_, message: Message):
     
     await message.reply_photo(
         photo=RESUMED,
-        caption=f"müzik devam ediyor !.\n\n✦ /durdur :- şarkıyı duraklat!!",
+        caption=f"Musiqi davam edir !.\n\n✦ /durdur :- Musiqini dayandır !",
         reply_markup=InlineKeyboardMarkup(BUTTON)
     )
     await message.delete()
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("•> **Şu anda müzik çalmıyor**")
+        await message.reply_text("•> **Hazırda ifa olunan musiqi yoxdur**")
     else:
         try:
             queues.clear(chat_id)
@@ -78,7 +78,7 @@ async def stop(_, message: Message):
         await callsmusic.pytgcalls.leave_group_call(chat_id)
         await _.send_message(
             message.chat.id,
-            "•> **Müzik durduruldu !**"
+            "•> **Musiqi dayandı !**"
         )
 
 @Client.on_message(commandpro(["/skip", "/atla", "/atla{BOT_USERNAME}", "/skip{BOT_USERNAME}"]) & other_filters)
@@ -92,7 +92,7 @@ async def skip(_, message: Message):
     if int(chat_id) not in ACTV_CALLS:
         
         await message.reply_text(
-            "**Atlamam için şarkı çalmam gerekiyor !**",
+            "**Tullanmaq üçün mahnı oxumalıyam !**",
             reply_markup=InlineKeyboardMarkup(BUTTON)
         )
         await message.delete()
@@ -113,7 +113,7 @@ async def skip(_, message: Message):
     
     await message.reply_photo(
         photo=SKIPPED,
-        caption=f"Sıradaki şarkıya geçildi ✓",
+        caption=f"Növbəti mahnı oxunur ✓",
         reply_markup=InlineKeyboardMarkup(BUTTON)
     )
     await message.delete()
