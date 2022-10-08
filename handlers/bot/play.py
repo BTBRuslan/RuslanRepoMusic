@@ -163,7 +163,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://te.legra.ph/file/7e7bbefe30efa696f0fbc.jpg"
+        thumb_name = "https://te.legra.ph/file/075499337227f2b0630ae.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -172,11 +172,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="Söhbət Qrupu 💬",
-                            url=f"https://t.me/FlamingoChat"),
+                            text="🤖 Digər Botlar",
+                            url=f"https://t.me/Rahid_44"),
                     InlineKeyboardButton(
-                            text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blogg"),                   
+                            text="🆘 Support",
+                            url=f"https://t.me/Rahid_Support"),                   
                ],
             ]
         )
@@ -213,29 +213,29 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="Söhbət Qrupu 💬",
-                            url=f"https://t.me/FlamingoChat"),
+                            text="🤖 Digər Botlar",
+                            url=f"https://t.me/Rahid_44"),
                     InlineKeyboardButton(
-                            text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blogg"),                   
+                            text="🆘 Support",
+                            url=f"https://t.me/Rahid_Support"),                   
                ],
             ]
         )
     
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://te.legra.ph/file/7e7bbefe30efa696f0fbc.jpg"
+            thumb_name = "https://te.legra.ph/file/075499337227f2b0630ae.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                            text="Söhbət Qrupu 💬",
-                            url=f"https://t.me/FlamingoChat"),
+                            text="🤖 Digər Botlar",
+                            url=f"https://t.me/Rahid_44"),
                     InlineKeyboardButton(
-                            text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blogg"),                   
+                            text="🆘 Support",
+                            url=f"https://t.me/Rahid_Support"),                   
                ],
             ]
         )
@@ -253,7 +253,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "Hansı mahnı dinləmək istəyirsinizsə /play mahnı adı yazın"
             )
-        await lel.edit(" **Səsli söhbətə daxil oluram...✅** ")
+        await lel.edit(" **Səsli söhbətə daxil oluram...🎧** ")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -278,7 +278,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**Sorğunuz tapılmadı, yenidən cəhd edin. **"
+                "**Sorğunuz tapılmadı, yenidən cəhd edin.**"
             )
             print(str(e))
             return
@@ -287,11 +287,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="Söhbət Qrupu 💬",
-                            url=f"https://t.me/FlamingoChat"),
+                            text="🤖 Digər Botlar",
+                            url=f"https://t.me/Rahid_44"),
                     InlineKeyboardButton(
-                            text="Kanal 🇦🇿",
-                            url=f"https://t.me/maqa_blogg"),                   
+                            text="🆘 Support",
+                            url=f"https://t.me/Rahid_Support"),                   
                ],
             ]
         )
